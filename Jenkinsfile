@@ -10,20 +10,20 @@ pipeline {
         }
       }
       
-//      stage('Build image'){
-//          steps{
-//              // Run Maven on a Unix agent.
-//              sh "docker build -t java_image ."        
-//          }
-//      }    
+      stage('Build image'){
+          steps{
+              // Run Maven on a Unix agent.
+              sh "docker build -t java_image ."        
+          }
+      }    
 
-//      stage('Create and start container'){
-//          steps{
-//              // Run Maven on a Unix agent.
-//              sh "docker run -itd --name myjava java_image"  
-//              sh "docker start myjava"
-//          }
-//      } 
+      stage('Create and start container'){
+          steps{
+              // Run Maven on a Unix agent.
+              sh "docker run -itd --name myjava java_image"  
+              sh "docker start myjava"
+          }
+      } 
 
   
    }
