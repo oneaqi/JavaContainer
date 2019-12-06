@@ -5,7 +5,7 @@ pipeline {
       stage('SCM') {
          steps {
             // Get some code from a GitHub repository
-            git credentialsId: 'd1096f94-70cb-4942-ac85-443fae9bef54', url: 'https://github.com/oneaqi/JavaContainer.git'
+            git credentialsId: 'a55fbd81-8017-4f19-97d8-71947b4caf8e', url: 'https://github.com/oneaqi/JavaContainer.git'
                  
         }
       }
